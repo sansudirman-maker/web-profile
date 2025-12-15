@@ -1,0 +1,315 @@
+/* Reset Dasar dan Font */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  line-height: 1.6;
+  background-color: #f4f7f6;
+  color: #333;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+a {
+  text-decoration: none;
+  color: #007bff;
+}
+
+a:hover {
+  color: #b30c00;
+}
+
+/* Header dan Navigasi */
+.header {
+  background: #3b0161;
+  border-top: 4px solid #ff8c00;
+  padding: 15px 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: 700;
+  color: #007bff;
+}
+
+.nav ul {
+  list-style: none;
+  display: flex;
+}
+
+.nav ul li {
+  margin-left: 20px;
+}
+
+.nav ul li a {
+  color: #ffffff;
+  font-weight: 600;
+  padding: 5px 10px;
+  transition: color 0.3s;
+}
+
+.nav ul li a:hover {
+  color: #007bff;
+}
+
+/* Bagian Berita Utama (Hero) */
+.main-news {
+  padding: 40px 0;
+}
+
+.hero-article {
+  display: flex;
+  background: linear-gradient(to left, rgb(152, 173, 177) 10%, white);
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+/* Gaya placeholder untuk Gambar
+.hero-article [Image] {
+  flex: 1;
+  min-height: 300px;
+  background-color: #ccc; /* Ganti dengan gambar sungguhan 
+  background-size: cover;
+  background-position: center; */
+
+/* Menggunakan atribut khusus untuk memastikan gambar muncul 
+  content: "";
+  display: block;
+}
+*/
+
+.hero-content {
+  flex: 2;
+  padding: 30px;
+}
+
+.hero-content .category {
+  display: inline-block;
+  background-color: #ffc107;
+  color: #333;
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+.hero-image img {
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  background-color: #ccc;
+  object-fit: cover;
+  background-position: right;
+  display: block;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+.hero-content h2 {
+  font-size: 32px;
+  margin-bottom: 15px;
+  color: #1a1a1a;
+}
+
+.hero-content .author-date {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.hero-content p {
+  margin-bottom: 10px;
+}
+
+.read-more {
+  display: inline-block;
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 4px;
+  font-weight: 600;
+}
+
+.read-more:hover {
+  opacity: 0.8;
+  color: black;
+  transition: background-color 0.3s;
+}
+
+/* Bagian Berita Sekunder */
+.secondary-news {
+  padding: 20px 0 60px 0;
+}
+
+.secondary-news h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #1a1a1a;
+}
+
+.articles-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 25px;
+}
+
+.news-card {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s;
+}
+
+.news-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Gaya placeholder untuk Gambar Kartu */
+.news-card [Image] {
+  width: 100%;
+  height: 180px;
+  background-color: #e0e0e0; /* Ganti dengan gambar sungguhan */
+  border-radius: 6px;
+  margin-bottom: 15px;
+  background-size: cover;
+  background-position: center;
+
+  /* Menggunakan atribut khusus untuk memastikan gambar muncul */
+  content: "";
+  display: block;
+}
+
+.news-card .category {
+  display: inline-block;
+  background-color: #28a745;
+  color: #fff;
+  padding: 3px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.news-card h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #1a1a1a;
+}
+
+.news-card .author-date {
+  font-size: 12px;
+  color: #999;
+}
+/* --- 5. KETERAMPILAN --- */
+.skills {
+  background-color: #dce3e2;
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.skills h2 {
+  margin-bottom: 40px;
+}
+
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.skill-item {
+  background-color: #f0f0f0;
+  padding: 15px 25px;
+  border-radius: 5px;
+  font-weight: 600;
+  color: #333;
+  transition: background-color 0.3s;
+  display: flex;
+  align-items: center;
+}
+
+.skill-item i {
+  font-size: 24px;
+  margin-right: 10px;
+  color: #007bff;
+}
+
+.skill-item:hover {
+  background-color: #007bff;
+  color: #fff;
+}
+.skill-item:hover i {
+  color: #fff;
+}
+/* Footer */
+.footer {
+  background: #260151;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 14px;
+}
+
+/* Responsivitas Dasar */
+@media (max-width: 900px) {
+  .hero-article {
+    flex-direction: column;
+  }
+
+  /* Atur ulang ukuran gambar hero */
+  .hero-article [Image] {
+    width: 100%;
+    height: 250px;
+  }
+
+  .hero-content {
+    padding: 20px;
+  }
+
+  .hero-content h2 {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 600px) {
+  .header .container {
+    flex-direction: column;
+  }
+
+  .logo {
+    margin-bottom: 10px;
+  }
+
+  .nav ul {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .nav ul li {
+    margin: 5px 10px;
+  }
+
+  .articles-grid {
+    grid-template-columns: 1fr; /* Satu kolom untuk layar kecil */
+  }
+}
